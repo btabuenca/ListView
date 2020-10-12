@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="misDatos">
+        <item>Texto 00</item>
+        <item>Texto 01</item>
+        <item>Texto 02</item>
+        <item>Texto 03</item>
+        <item>Texto 04</item>
+        <item>Texto 05</item>
+        <item>Texto 06</item>
+        <item>Texto 07</item>
+        <item>Texto 08</item>
+        <item>Texto 09</item>
+        <item>Texto 10</item>
+        <item>Texto 11</item>
+        <item>Texto 12</item>
+        <item>Texto 13</item>
+        <item>Texto 14</item>
+    </string-array>
+</resources>

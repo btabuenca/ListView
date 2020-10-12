@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">[MiW] ListView</string>
+    <string name="act_muestra_detalle">Mostrar Detalle</string>
+    <string name="txtImgDesc">[IMG]</string>
+</resources>

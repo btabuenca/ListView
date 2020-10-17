@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements ListView.OnItemCl
         // Crear adaptador a partir de datos
         Adaptador adaptador = new Adaptador(
                 this,
-                R.layout.item_lista_2,
+                R.layout.item_lista,
                 getResources().getStringArray(R.array.misDatos)
         );
 
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements ListView.OnItemCl
         bundle.putInt(CLAVE_ID, position);
         bundle.putString(CLAVE_OPCION, parent.getItemAtPosition(position).toString());
 
-        Intent intent = new Intent(getApplicationContext(), MuestraDetalle.class);
+        Intent intent = new Intent(getApplicationContext(), MuestraDetalleActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
     }

@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="es.upm.miw.listview.MuestraDetalle"
+        <activity android:name="es.upm.miw.listview.MuestraDetalleActivity"
             android:label="@string/act_muestra_detalle"
             android:parentActivityName="es.upm.miw.listview.MainActivity"
             />

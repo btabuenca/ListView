@@ -7,12 +7,12 @@ import android.widget.TextView;
 
 import java.util.Locale;
 
-public class MuestraDetalle extends AppCompatActivity {
+public class MuestraDetalleActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_muestra_item);
+        setContentView(R.layout.activity_muestra_detalle);
 
         // Recupero el recurso asociado en la vista
         TextView tvIdentificador = findViewById(R.id.tvMostrarId);

@@ -18,26 +18,26 @@ public class RowArrayAdapter extends ArrayAdapter<RowItem> {
         this.context = context;
     }
 
-    private class ViewHolder {
+    private class RowItemHolder {
         ImageView imageView;
         TextView txtName;
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder holder = null;
+        RowItemHolder holder = null;
         RowItem rowItem = getItem(position);
 
         LayoutInflater mInflater = (LayoutInflater) context
                 .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         if (convertView == null) {
-            convertView = mInflater.inflate(R.layout.list_item, null);
-            holder = new ViewHolder();
+            convertView = mInflater.inflate(R.layout.row_item, null);
+            holder = new RowItemHolder();
 
             holder.txtName = (TextView) convertView.findViewById(R.id.textView);
             holder.imageView = (ImageView) convertView.findViewById(R.id.imageView);
             convertView.setTag(holder);
         } else
-            holder = (ViewHolder) convertView.getTag();
+            holder = (RowItemHolder) convertView.getTag();
 
 
         holder.txtName.setText(rowItem.getName());

@@ -16,8 +16,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements
         AdapterView.OnItemClickListener {
 
-    // https://ibytecode.com/blog/custom-listview-with-image-and-text-using-with-arrayadapter/
-
     public static final String[] names = new String[] { "Alonso Quijano",
             "Dulcinea del Toboso", "Sancho Panza", "Rocinante", "Clavileño" };
     public static final Integer[] images = { R.drawable.q1,
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements
 
         listView = (ListView) findViewById(R.id.listView);
         RowArrayAdapter adapter = new RowArrayAdapter(this,
-                R.layout.list_item, rowItems);
+                R.layout.row_item, rowItems);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
     }
